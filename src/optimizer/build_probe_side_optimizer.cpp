@@ -72,7 +72,7 @@ static void FlipChildren(LogicalOperator &op) {
 		return;
 	}
 	default:
-		throw InternalException("Flipping children, but children were not flipped");
+		throw InternalException("Flipping children, but children were not flipped. crazy wow");
 	}
 }
 
