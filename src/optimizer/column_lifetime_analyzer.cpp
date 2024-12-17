@@ -239,7 +239,7 @@ unique_ptr<Expression> ColumnLifetimeAnalyzer::VisitReplace(BoundColumnRefExpres
 unique_ptr<Expression> ColumnLifetimeAnalyzer::VisitReplace(BoundReferenceExpression &expr,
                                                             unique_ptr<Expression> *expr_ptr) {
 	// BoundReferenceExpression should not be used here yet, they only belong in the physical plan
-	throw InternalException("BoundReferenceExpression should not be used here yet!");
-}
+	throw InternalException("BoundReferenceExpression should not be used here yet! wow");
+} 
 
 } // namespace duckdb
